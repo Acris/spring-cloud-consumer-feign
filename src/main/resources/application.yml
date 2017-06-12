@@ -1,0 +1,16 @@
+server:
+  port: 8015
+
+spring:
+  application:
+    name: spring-cloud-consumer-feign
+  cloud:
+    consul:
+      host: 192.168.88.88
+      port: 8500
+      discovery:
+        prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true
